@@ -38,7 +38,7 @@ void setup()
 
   //Second row character positioning.
   //blankSpace = " ";
-  //" ", thermostat, " ", " ", " ", degree, celsius, " ", " ", droplet, " ", " ", " ", percentage, " ", " ".
+  //" ", thermostat, " ", " ", " ", degree, celsius, " ", " ", " ", droplet, " ", " ", " ", percentage, " ".
   //Position of thermostat character.
   lcd.setCursor(1,1);
   lcd.write(4);
@@ -52,11 +52,11 @@ void setup()
   lcd.write(0);
 
   //Position of droplet character.
-  lcd.setCursor(9,1);
+  lcd.setCursor(10,1);
   lcd.write(2);
 
   //Position of percentage character.
-  lcd.setCursor(13,1);
+  lcd.setCursor(14,1);
   lcd.write(3);
 }
 
@@ -97,17 +97,17 @@ void loop()
   {
     if(h < 10)
     {
-      lcd.setCursor(12,1);
+      lcd.setCursor(13,1);
     }
 
     if(h >= 10)
     {
-      lcd.setCursor(11,1);
+      lcd.setCursor(12,1);
     }
 
     if(h >= 100)
     {
-      lcd.setCursor(10,1);
+      lcd.setCursor(11,1);
     }
     
     lcd.print(String((int)h));
