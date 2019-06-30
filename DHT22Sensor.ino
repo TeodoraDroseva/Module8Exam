@@ -33,8 +33,6 @@ void setup()
 
   //Start DHT.
   dht.begin();
-  //Use digital 5V to power DHT sensor.
-  digitalWrite(7, HIGH);
 
   //Second row character positioning.
   //blankSpace = " ";
